@@ -1,0 +1,12 @@
+/**
+ *   @section shadow阴影方法
+ *   @author zhangmingrui | 592044573@qq.com
+ *   @date created 2016-05-30
+ *   参数说明：psd中的混合投影参数
+ *      @blur 距离
+ *      @spread 扩展
+ *      @size 大小
+ *      @angle 角度     小数
+ *      @color 结合设置的不透明度用rgba格式表示
+ *   @example .shadow(12rem,0.1,40rem,90,rgba(101,141,254,0.4));
+ */

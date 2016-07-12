@@ -1,0 +1,37 @@
+<template class="task-template">
+  <section id="write-section" class="section js-section u-category-blog">
+    <header class="section-header">
+      <div class="section-wrapper">
+        <h1>
+          <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-windows"></use></svg>
+          写博客
+        </h1>
+        <h3>开始一个博客</h3>
+      </div>
+    </header>
+    
+    <div class="demo">
+      <div class="demo-wrapper">
+        <button id="new-window-demo-toggle" class="js-container-target demo-toggle-button">开启markdown
+          <div class="demo-meta u-avoid-clicks">Supports: Win, OS X, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
+        </button>
+        <div class="demo-box">
+          <div class="demo-controls">
+            <button class="demo-button" id="js-write-ipc">点我和main-process通讯</button>
+          </div>
+          <p id="js-write-msg"></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section-wrapper">
+        <p id="js-write-msg"></p>
+        <button id="js-write-ipc"></button>
+    </div>
+    
+    <script type="text/javascript">
+      require('./renderer-process/blog/write');
+    </script>
+
+  </section>
+</template>

@@ -1,0 +1,312 @@
+/**
+ *  所有页面公共的css，包括：
+ *    1. reset.less
+ *    2. 公共布局layout.less
+ *  @project h5项目
+ *  @version 1.0
+ *  @author zhangmingrui | 592044573@qq.com
+ *  @date created 2015-12-02
+ */
+/*reset.css 统一浏览器基本样式*/
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+hr,
+dl,
+dt,
+dd,
+button,
+input,
+select,
+textarea,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: none;
+  vertical-align: baseline;
+  font-size: 100%;
+}
+input,
+textarea,
+button,
+select {
+  outline: none;
+}
+ul,
+ol,
+li {
+  vertical-align: baseline;
+  margin: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+/**
+ *  页面公共css
+ *  @project h5项目
+ *  @version 1.0
+ *  @author zhangmingrui | 592044573@qq.com
+ *  @date created 2015-12-02
+ */
+/**
+ *  页面公共布局：定义一些公共的样式和一些基本布局
+ *  @project h5项目
+ *  @version 1.0
+ *  @author zhangmingrui | 592044573@qq.com
+ *  @date created 2015-12-02
+ */
+/**
+ *  项目整体定义的基本css变量：颜色、字体大小等
+ *  @project lab-electron-markdown
+ *  @version 1.0
+ *  @author zhangmingrui | 592044573@qq.com
+ *  @date created 2015-12-02
+ */
+/**
+ *   @section 图片路径
+ */
+/* Fonts ---------------------------- */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro'), url('../fonts/SourceCodePro-Regular.ttf') format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: system, -apple-system, '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+  /* Prevents rubber-band scrolling of the whole "page" */
+  background-color: #fff;
+  color: var(--color);
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+}
+a {
+  color: var(--color-link);
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+h3 {
+  font-size: 1.12em;
+  font-weight: 600;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-width: 0 1px 1px 0;
+}
+th {
+  background-color: rgba(128, 128, 128, 0.06);
+}
+th,
+td {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-width: 1px 0 0 1px;
+}
+svg {
+  fill: currentColor;
+}
+/* Code */
+code,
+kbd {
+  font-family: 'Source Code Pro', monospace;
+  border-radius: 4px;
+  padding: 1px 4px;
+  white-space: nowrap;
+  color: #5c5c5c;
+  background-color: rgba(153, 153, 153, 0.15);
+}
+pre,
+kbd {
+  font-size: 13px;
+  overflow: auto;
+  padding: 1em;
+  margin: 0;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: var(--color-border);
+  background-color: white;
+}
+pre code {
+  white-space: pre;
+}
+pre > .hljs {
+  color: var(--color-subtle);
+  background-color: white;
+}
+kbd {
+  padding: 0.5em;
+}
+/* Utilities ---------------------------- */
+.u-avoid-clicks {
+  pointer-events: none;
+}
+/* Visually hidden, but will be read by screen readers */
+.u-visible-to-screen-reader {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/* Content ------------------ */
+.content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+}
+.content.is-shown {
+  visibility: visible;
+  opacity: 1;
+}
+/* Hacks ---------------------------- */
+/* Fixes horizontal scrolling in code blocks on OS X El Cap (10.11.3), retina screen
+ *
+ * By adding an invisible outline property, it will force a repaint
+ * which enables the scrolling.
+ */
+.hljs:hover,
+.hljs:active {
+  outline: 1px solid transparent;
+}
+/**
+ *  全局的按钮布局
+ *  @author zhangmingrui
+ *  @date created 2016-04-18
+ *  class命名规范：.g-btn-*
+ */
+/**
+ *  全局icon样式
+ *  @version 1.0
+ *  @author zhangmingrui | 592044573@qq.com
+ *  @date created 2016-05-20
+ *  class命名规范：.g-icon-*
+ */
+/**
+ *  全局信息提示样式
+ *  @project 溯源webapp
+ *  @version 1.0
+ *  @author zhangmingrui | 592044573@qq.com
+ *  @date created 2016-05-19
+ *  class命名规范：.g-msg-*
+ */
