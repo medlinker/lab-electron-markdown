@@ -30,15 +30,26 @@
   color: var(--color);
 }
 
+.section>header .section-wrapper{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .section-wrapper {
   position: relative;
-  max-width: 740px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 2rem 1rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--color-border);
 }
+
+.section>.body .section-wrapper{
+    
+}
+
 @media (min-width: 940px) {
-  .section-wrapper {
+  .section>header .section-wrapper {
     padding-top: 4rem;
   }
 }
