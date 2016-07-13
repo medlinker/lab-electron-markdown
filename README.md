@@ -24,8 +24,8 @@ You can [download the latest release](https://github.com/electron/electron-api-d
 You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
 
 ```bash
-$ git clone https://github.com/electron/electron-api-demos
-$ cd electron-api-demos
+$ git clone https://github.com/medlinker/lab-electron-markdown.git
+$ cd lab-electron-markdown
 $ npm install
 $ npm start
 ```
