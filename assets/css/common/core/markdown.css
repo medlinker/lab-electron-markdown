@@ -8,6 +8,7 @@
   min-height: 20px;
   padding: 19px;
   color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .MK-content h1 {
   font-size: 30px;
@@ -47,6 +48,7 @@
 .MK-content ol,
 .MK-content ul {
   padding-left: 32px;
+  margin: 13px 0;
 }
 .MK-content ol {
   list-style-type: decimal;
@@ -106,4 +108,12 @@
 }
 .MK-content table td {
   border-top: 1px solid #ddd;
+}
+.MK-content a {
+  color: #0069d6;
+  text-decoration: underline;
+  border: none;
+}
+.MK-content a:hover {
+  text-decoration: underline;
 }
