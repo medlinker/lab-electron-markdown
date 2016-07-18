@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'lepture/editor',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData lepture/editor
+8 silly fetchOtherPackageData lepture/editor
+9 silly cache add args [ 'lepture/editor', null ]
+10 verbose cache add spec lepture/editor
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'lepture/editor',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'lepture/editor',
+11 silly cache add   spec: 'github:lepture/editor',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:lepture/editor.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/lepture/editor.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/lepture/editor.git',
+11 silly cache add      gitUrl: 'git://github.com/lepture/editor.git',
+11 silly cache add      shortcut: 'github:lepture/editor',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/lepture/editor/master/package.json' } }
+12 verbose addRemoteGit caching lepture/editor
+13 verbose addRemoteGit lepture/editor is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/lepture/editor.git
+15 silly tryClone cloning lepture/editor via git://github.com/lepture/editor.git
+16 verbose tryClone git-github-com-lepture-editor-git-e9f69459 not in flight; caching
+17 verbose correctMkdir C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+18 verbose makeDirectory C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes creation not in flight; initializing
+19 verbose makeCacheDir UID & GID are irrelevant on win32
+20 verbose git clone --template=C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/lepture/editor.git C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\git-github-com-lepture-editor-git-e9f69459: undefined
+20 verbose git clone --template=C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/lepture/editor.git C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\git-github-com-lepture-editor-git-e9f69459: undefined
+21 silly tryHTTPS attempting to clone git+https://github.com/lepture/editor.git
+22 silly tryClone cloning lepture/editor via git+https://github.com/lepture/editor.git
+23 verbose tryClone git-https-github-com-lepture-editor-git-cde57b73 not in flight; caching
+24 verbose correctMkdir C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+25 verbose git clone --template=C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/lepture/editor.git C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-lepture-editor-git-cde57b73: undefined
+25 verbose git clone --template=C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/lepture/editor.git C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-lepture-editor-git-cde57b73: undefined
+26 silly trySSH attempting to clone git@github.com:lepture/editor.git
+27 silly tryClone cloning lepture/editor via git@github.com:lepture/editor.git
+28 verbose tryClone git-github-com-lepture-editor-git-8a0fa90e not in flight; caching
+29 verbose correctMkdir C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+30 error git clone --template=C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:lepture/editor.git C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\git-github-com-lepture-editor-git-8a0fa90e: undefined
+30 error git clone --template=C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:lepture/editor.git C:\Users\mingrui\AppData\Roaming\npm-cache\_git-remotes\git-github-com-lepture-editor-git-8a0fa90e: undefined
+31 silly fetchPackageMetaData Error: not found: git
+31 silly fetchPackageMetaData     at F (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:63:19)
+31 silly fetchPackageMetaData     at E (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:72:29)
+31 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:81:16
+31 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+31 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+31 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:117:15)
+31 silly fetchPackageMetaData  error for lepture/editor { Error: not found: git
+31 silly fetchPackageMetaData     at F (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:63:19)
+31 silly fetchPackageMetaData     at E (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:72:29)
+31 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:81:16
+31 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+31 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+31 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:117:15) code: 'ENOGIT' }
+32 silly rollbackFailedOptional Starting
+33 silly rollbackFailedOptional Finishing
+34 silly runTopLevelLifecycles Starting
+35 silly runTopLevelLifecycles Finishing
+36 silly install printInstalled
+37 verbose stack Error: not found: git
+37 verbose stack     at F (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:63:19)
+37 verbose stack     at E (C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:72:29)
+37 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\which.js:81:16
+37 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\index.js:44:5
+37 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\which\node_modules\isexe\windows.js:29:5
+37 verbose stack     at FSReqWrap.oncomplete (fs.js:117:15)
+38 verbose cwd D:\mycoderoot\lab-electron-markdown
+39 error Windows_NT 10.0.10240
+40 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "lepture/editor" "--save-dev"
+41 error node v6.2.0
+42 error npm  v3.8.9
+43 error code ENOGIT
+44 error not found: git
+45 error Failed using git.
+45 error This is most likely not a problem with npm itself.
+45 error Please check if you have git installed and in your PATH.
+46 verbose exit [ 1, true ]

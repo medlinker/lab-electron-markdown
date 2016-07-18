@@ -1,10 +1,6 @@
 .MK-content {
-  margin: 10px;
   background-color: #f5f5f5;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-  margin-bottom: 20px;
   min-height: 20px;
   padding: 19px;
   color: #333;
@@ -116,4 +112,24 @@
 }
 .MK-content a:hover {
   text-decoration: underline;
+}
+/**
+ *   @section markdown编辑器
+ */
+.MK-editor {
+  display: flex;
+  min-height: 100%;
+  color: #000;
+}
+.MK-editor .in,
+.MK-editor .out {
+  flex: 1;
+  padding: 20px;
+}
+.MK-editor .in {
+  border-right: 1px solid var(--color-accent);
+}
+.MK-editor .in .btn-wrapper {
+  text-align: center;
+  margin-top: 20px;
 }

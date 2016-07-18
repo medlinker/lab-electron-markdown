@@ -4,3 +4,17 @@
  *  @date created 2016-04-18
  *  class命名规范：.g-btn-*
  */
+.g-btn-button {
+    color: var(--color-accent);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-accent);
+    font-size: 1.2em;
+    padding: 0.4em 1.2em;
+    background-color: transparent;
+    border-radius: 4px;
+    &:active {
+        border-color: var(--color-border);
+        color: var(--color-border);
+    }
+}
