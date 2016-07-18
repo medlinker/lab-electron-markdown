@@ -42,7 +42,7 @@ function handleSectionTrigger (event) {
 }
 
 function activateDefaultSection () {
-  document.getElementById('button-write').click()
+  document.getElementById('button-markdown').click()
 }
 
 function showMainContent () {
