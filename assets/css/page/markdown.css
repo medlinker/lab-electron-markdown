@@ -118,6 +118,7 @@
  */
 .MK-editor {
   display: flex;
+  flex-wrap: wrap;
   min-height: 100%;
   color: #000;
 }
@@ -125,6 +126,7 @@
 .MK-editor .out {
   flex: 1;
   padding: 20px;
+  min-width: 350px;
 }
 .MK-editor .in {
   border-right: 1px solid var(--color-accent);
