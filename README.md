@@ -1,27 +1,12 @@
-# <img src="https://cloud.githubusercontent.com/assets/378023/15172388/b2b81950-1790-11e6-9a7c-ccc39912bb3a.png" width="60px" align="center" alt="Electron API Demos icon"> Electron API Demos
+# <img src="https://cloud.githubusercontent.com/assets/378023/15172388/b2b81950-1790-11e6-9a7c-ccc39912bb3a.png" width="60px" align="center" alt="Electron API Demos icon"> 基于electron框架开发的一个简单markdown桌面app
 
-This is a desktop app that interactively and with sample code demonstrates core features of the [Electron](http://electron.atom.io) API. It's built with Electron, too, of course. This app works on Windows, OS X and Linux operating systems.
+## 什么是electron
 
-Use this app to see what you can do with Electron and use the source code to learn how to create a basic Electron app.
+electron是一个可以使用javascript,html,css构建跨平台桌面引用的app框架。[Electron官网](http://electron.atom.io). 支持的平台有： Windows, OS X and Linux operating systems.
 
-![Electron API Demos Screenshots](https://cloud.githubusercontent.com/assets/378023/15016148/ae06cc80-124a-11e6-80dd-076d83e492f6.png)
+## 使用
 
----
-
-This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code. Please report unacceptable
-behavior to electron@github.com.
-
-Follow [@ElectronJS](https://twitter.com/electronjs) on Twitter for important
-announcements. Visit the [electron website](http://electron.atom.io).
-
-## Using
-
-You can [download the latest release](https://github.com/electron/electron-api-demos/releases) for your operating system or build it yourself (see below).
-
-## Building
-
-You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
+请先下载并安装 [Node.js](https://nodejs.org) 在你的电脑上.
 
 ```bash
 $ git clone https://github.com/medlinker/lab-electron-markdown.git
@@ -30,14 +15,16 @@ $ npm install
 $ npm start
 ```
 
-If you don't wish to clone, you can [download the source code](https://github.com/electron/electron-api-demos/archive/master.zip).
-
-For easier developing you can launch the app in fullscreen with DevTools open:
+如果想打卡开发者工具来调试，可以运行以下命令来代替npm start:
 
 ```bash
 $ npm run dev
 ```
 
-## Extending
+## 参考文献
 
- [Read the docs](docs.md) to learn more about how this app is built or how to [add a new demo](docs.md#add-a-section-or-demo).
+markdown的相关功能实现，感谢以下github资源：
+
+1. [markdown editor](https://github.com/lepture/editor) 提供了一个可视的markdown编辑器。该编辑器正在开发中，但已经提供了一些最基本的功能.
+2. [markdown语法编译器](https://github.com/evilstreak/markdown-js) 一个非常好用的api，仅仅一句话便可以将markdown语法编译成html格式。
+
