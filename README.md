@@ -1,4 +1,8 @@
-# <img src="https://cloud.githubusercontent.com/assets/378023/15172388/b2b81950-1790-11e6-9a7c-ccc39912bb3a.png" width="60px" align="center" alt="Electron API Demos icon"> 基于electron框架开发的一个简单markdown桌面app
+# <img src="https://cloud.githubusercontent.com/assets/378023/15172388/b2b81950-1790-11e6-9a7c-ccc39912bb3a.png" width="60px" align="center"> 基于electron框架开发的一个简单markdown桌面app，意在对于electron的使用学习。
+
+<img src="https://github.com/medlinker/lab-electron-markdown/blob/master/assets/img/product.png" width="600px">
+
+默认一开始展示几个常见的markdown语法编译后的样式
 
 ## 什么是electron
 
