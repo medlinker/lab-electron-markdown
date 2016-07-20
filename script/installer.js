@@ -17,14 +17,14 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'out')
 
   return Promise.resolve({
-    appDirectory: path.join(outPath, 'ElectronAPIDemos-win32-ia32'),
-    // TODO Switch iconUrl to https://raw.githubusercontent.com/electron/electron-api-demos/master/assets/app-icon/win/app.ico
+    appDirectory: path.join(outPath, 'LabElectronMarkdown-win32-ia32'),
+    // TODO Switch iconUrl to https://raw.githubusercontent.com/electron/lab-electron-markdown/master/assets/app-icon/win/app.ico
     // once the repository is made public
     iconUrl: 'https://gist.githubusercontent.com/kevinsawicki/9b90f6f8a35c3f3acb6d/raw/67b9015a3be1729145bb9813ff8530c7615fbcf4/app.ico',
     loadingGif: path.join(rootPath, 'assets', 'img', 'loading.gif'),
     noMsi: true,
     outputDirectory: path.join(outPath, 'windows-installer'),
-    setupExe: 'ElectronAPIDemosSetup.exe',
+    setupExe: 'LabElectronMarkdownSetup.exe',
     setupIcon: path.join(rootPath, 'assets', 'app-icon', 'win', 'app.ico'),
     skipUpdateIcon: true
   })

@@ -10,30 +10,36 @@ exports.initialize = function () {
   autoUpdater.on('checking-for-update', function () {
     state = 'checking'
     exports.updateMenu()
+    console.log(state);
   })
 
   autoUpdater.on('update-available', function () {
     state = 'checking'
     exports.updateMenu()
+    console.log(state);
   })
 
   autoUpdater.on('update-downloaded', function () {
     state = 'installed'
     exports.updateMenu()
+    console.log(state);
   })
 
   autoUpdater.on('update-not-available', function () {
     state = 'no-update'
     exports.updateMenu()
+    console.log('update-not-available'+state);
   })
 
   autoUpdater.on('error', function () {
     state = 'no-update'
     exports.updateMenu()
+    console.log('error'+state);
   })
-
+  
   autoUpdater.setFeedURL(`https://electron-api-demos.githubapp.com/updates?version=${app.getVersion()}`)
   autoUpdater.checkForUpdates()
+  console.log(app.getVersion());
 }
 
 exports.updateMenu = function () {
